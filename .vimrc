@@ -295,9 +295,6 @@ endif
 
 " _. Clojure {{{
 if count(g:vimified_packages, 'clojure')
-    Bundle 'guns/vim-clojure-static'
-    Bundle 'tpope/vim-fireplace'
-    Bundle 'tpope/vim-classpath'
 endif
 " }}}
 
@@ -728,6 +725,13 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 Bundle "wincent/command-t"
 
+Bundle 'tpope/vim-classpath'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'tpope/vim-fireplace'
+Bundle 'wakatime/vim-wakatime'
+Bundle 'pangloss/vim-javascript'
+Bundle 'briancollins/vim-jst'
 " activate visual mode in normal mode
 nmap <S-Up> V
 nmap <S-Down> V
@@ -751,10 +755,10 @@ imap <S-Down> <Esc>v<Down>
 imap <S-Left> <Esc>v<Left>
 imap <S-Right> <Esc>v<Right>
 
-imap jj <Esc> " Professor VIM says '87% of users prefer jj over esc', jj abrams disagrees 
+imap jj <Esc> " Professor VIM says '87% of users prefer jj over esc', jj abrams disagrees
 set cursorline
 set incsearch  " Incremental search, search as you type
-set ignorecase " Ignore case when searching 
+set ignorecase " Ignore case when searching
 set smartcase " Ignore case when searching lowercase
 imap aa @
 
